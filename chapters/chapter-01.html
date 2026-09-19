@@ -1,0 +1,3470 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- =========================================================
+       BASIC SEO
+  ========================================================== -->
+    <title>Chapter 1: Computer की Basic Knowledge | AI Learning Course</title>
+
+    <meta name="description"
+        content="Chapter 1 में Computer की Basic Knowledge सीखें — Computer क्या है, Hardware और Software, CPU, RAM, Storage, Operating System, Windows और Linux, Files और Folders, Browser, Internet, Website और Web Application, तथा Cloud को आसान भाषा में समझें।">
+
+    <meta name="keywords"
+        content="Computer Basic Knowledge, Computer क्या है, Hardware Software, CPU RAM Storage, Operating System, Windows Linux, Files Folders, Browser, Internet, Website Web Application, Cloud, AI Course Hindi">
+
+    <meta name="author" content="AI Learning Academy">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com/chapters/chapter-01.html">
+
+    <!-- =========================================================
+       OPEN GRAPH
+  ========================================================== -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:site_name" content="AI Learning Academy">
+
+    <meta property="og:title" content="Chapter 1: Computer की Basic Knowledge">
+
+    <meta property="og:description"
+        content="AI सीखने से पहले Computer की मजबूत foundation बनाएं। Hardware, Software, CPU, RAM, Storage, OS, Files, Browser, Internet और Cloud को step-by-step समझें।">
+
+    <meta property="og:url" content="https://example.com/chapters/chapter-01.html">
+
+    <meta property="og:image" content="https://example.com/assets/og-chapter-01.jpg">
+
+    <meta property="og:image:alt" content="Computer की Basic Knowledge - AI Learning Academy">
+
+    <!-- =========================================================
+       TWITTER / X
+  ========================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Chapter 1: Computer की Basic Knowledge">
+
+    <meta name="twitter:description" content="Computer fundamentals सीखें और AI course की foundation मजबूत करें।">
+
+    <meta name="twitter:image" content="https://example.com/assets/og-chapter-01.jpg">
+
+    <!-- =========================================================
+       PERFORMANCE
+  ========================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- =========================================================
+       STRUCTURED DATA
+  ========================================================== -->
+
+    <!-- Course -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Learning Course - Chapter 1: Computer की Basic Knowledge",
+    "description": "Computer fundamentals सीखने के लिए Chapter 1 जिसमें Computer, Hardware, Software, CPU, RAM, Storage, Operating System, Files, Browser, Internet, Website, Web Application और Cloud शामिल हैं।",
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Learning Academy",
+      "url": "https://example.com/"
+    },
+    "inLanguage": "hi",
+    "educationalLevel": "Beginner",
+    "isAccessibleForFree": true,
+    "courseMode": "online"
+  }
+  </script>
+
+    <!-- Article -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Chapter 1: Computer की Basic Knowledge",
+    "description": "Computer की basic knowledge का complete beginner-friendly chapter.",
+    "inLanguage": "hi",
+    "author": {
+      "@type": "Organization",
+      "name": "AI Learning Academy"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Learning Academy"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://example.com/chapters/chapter-01.html"
+    }
+  }
+  </script>
+
+    <!-- Breadcrumb -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Course",
+        "item": "https://example.com/#curriculum"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Chapter 1",
+        "item": "https://example.com/chapters/chapter-01.html"
+      }
+    ]
+  }
+  </script>
+
+    <!-- =========================================================
+       INTERNAL CSS
+  ========================================================== -->
+    <style>
+        /* =========================================================
+       RESET
+    ========================================================== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans Devanagari",
+                Arial,
+                sans-serif;
+
+            color: #172033;
+            background: #f7f9fc;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        ::selection {
+            background: #dbe7ff;
+            color: #10204d;
+        }
+
+        /* =========================================================
+       DESIGN TOKENS
+    ========================================================== */
+        :root {
+            --primary: #315efb;
+            --primary-dark: #2346c8;
+            --primary-soft: #edf2ff;
+
+            --text: #172033;
+            --text-soft: #566176;
+            --text-muted: #778196;
+
+            --white: #ffffff;
+            --surface: #ffffff;
+            --surface-soft: #f8faff;
+
+            --border: #e6eaf1;
+            --border-strong: #d8deea;
+
+            --green: #16865b;
+            --green-soft: #e9f8f1;
+
+            --orange: #c87512;
+            --orange-soft: #fff5e6;
+
+            --red: #c93d4f;
+            --red-soft: #fff0f2;
+
+            --shadow-sm:
+                0 4px 18px rgba(27, 39, 70, 0.06);
+
+            --shadow-md:
+                0 14px 40px rgba(27, 39, 70, 0.09);
+
+            --shadow-lg:
+                0 25px 70px rgba(27, 39, 70, 0.12);
+
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+
+            --container: 1240px;
+        }
+
+        /* =========================================================
+       TOP READING PROGRESS
+    ========================================================== */
+        .reading-progress {
+            position: fixed;
+            inset: 0 0 auto 0;
+            height: 4px;
+            z-index: 9999;
+            background: transparent;
+        }
+
+        .reading-progress span {
+            display: block;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    #315efb,
+                    #6f8cff);
+            transition: width 0.1s linear;
+        }
+
+        /* =========================================================
+       HEADER
+    ========================================================== */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.94);
+            border-bottom: 1px solid rgba(230, 234, 241, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .header-inner {
+            max-width: var(--container);
+            margin: auto;
+            min-height: 74px;
+            padding: 0 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .brand-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+
+            display: grid;
+            place-items: center;
+
+            color: #fff;
+            background:
+                linear-gradient(135deg,
+                    #315efb,
+                    #6c87ff);
+
+            box-shadow:
+                0 8px 20px rgba(49, 94, 251, 0.25);
+        }
+
+        .brand-text {
+            font-size: 15px;
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-nav a {
+            padding: 9px 12px;
+            border-radius: 10px;
+            color: var(--text-soft);
+            font-size: 14px;
+            font-weight: 650;
+            transition: 0.2s ease;
+        }
+
+        .header-nav a:hover,
+        .header-nav a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 40px;
+            padding: 0 15px;
+
+            color: #fff;
+            background: var(--primary);
+
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 750;
+
+            box-shadow:
+                0 7px 18px rgba(49, 94, 251, 0.2);
+
+            transition: 0.2s ease;
+        }
+
+        .header-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu {
+            display: none;
+
+            width: 42px;
+            height: 42px;
+
+            border: 1px solid var(--border);
+            border-radius: 11px;
+
+            background: #fff;
+            color: var(--text);
+
+            font-size: 20px;
+        }
+
+        /* =========================================================
+       PAGE LAYOUT
+    ========================================================== */
+        .page-shell {
+            max-width: var(--container);
+            margin: auto;
+            padding: 30px 24px 80px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 7px;
+
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            font-weight: 650;
+        }
+
+        .breadcrumb-separator {
+            color: #adb5c5;
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* =========================================================
+       SIDEBAR
+    ========================================================== */
+        .sidebar {
+            position: sticky;
+            top: 96px;
+
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+
+            padding: 18px;
+
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-title {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .toc {
+            list-style: none;
+            display: grid;
+            gap: 3px;
+        }
+
+        .toc a {
+            display: block;
+            padding: 8px 10px;
+
+            color: var(--text-soft);
+            font-size: 13px;
+            font-weight: 600;
+
+            border-radius: 9px;
+            transition: 0.2s ease;
+        }
+
+        .toc a:hover,
+        .toc a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .sidebar-progress {
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+        }
+
+        .progress-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+
+            font-size: 12px;
+            color: var(--text-soft);
+            margin-bottom: 8px;
+        }
+
+        .progress-value {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .progress-track {
+            height: 7px;
+            border-radius: 99px;
+            overflow: hidden;
+            background: #edf0f5;
+        }
+
+        .progress-track span {
+            display: block;
+            width: 0;
+            height: 100%;
+            background: var(--primary);
+            border-radius: inherit;
+            transition: width 0.3s ease;
+        }
+
+        /* =========================================================
+       MAIN ARTICLE
+    ========================================================== */
+        .article {
+            min-width: 0;
+        }
+
+        .chapter-hero {
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 100% 0%,
+                    rgba(49, 94, 251, 0.13),
+                    transparent 35%),
+                linear-gradient(135deg,
+                    #ffffff,
+                    #f7f9ff);
+
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+
+            padding: clamp(28px, 5vw, 54px);
+
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+        }
+
+        .chapter-hero::after {
+            content: "";
+            position: absolute;
+
+            width: 190px;
+            height: 190px;
+
+            right: -75px;
+            bottom: -95px;
+
+            border-radius: 50%;
+
+            background: rgba(49, 94, 251, 0.06);
+        }
+
+        .chapter-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            color: var(--primary);
+            background: var(--primary-soft);
+
+            border: 1px solid #dce5ff;
+
+            padding: 7px 11px;
+            border-radius: 999px;
+
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .chapter-label::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .chapter-title {
+            max-width: 850px;
+
+            color: #111a2e;
+
+            font-size: clamp(2rem,
+                    5vw,
+                    4rem);
+
+            line-height: 1.1;
+            letter-spacing: -0.045em;
+
+            margin-bottom: 18px;
+        }
+
+        .chapter-intro {
+            max-width: 790px;
+
+            color: var(--text-soft);
+            font-size: clamp(15px,
+                    2vw,
+                    18px);
+
+            line-height: 1.8;
+        }
+
+        .chapter-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+
+            margin-top: 26px;
+        }
+
+        .meta-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            padding: 8px 11px;
+
+            color: var(--text-soft);
+            background: #fff;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* =========================================================
+       COMPLETE BUTTON
+    ========================================================== */
+        .complete-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+
+            padding: 18px 20px;
+
+            background: var(--green-soft);
+            border: 1px solid #cfeee0;
+
+            border-radius: var(--radius-md);
+
+            margin-bottom: 24px;
+        }
+
+        .complete-text strong {
+            display: block;
+            color: #116a48;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .complete-text span {
+            display: block;
+            color: #4e7164;
+            font-size: 12px;
+        }
+
+        .complete-button {
+            flex: 0 0 auto;
+
+            border: 0;
+
+            padding: 10px 15px;
+
+            border-radius: 10px;
+
+            color: #fff;
+            background: var(--green);
+
+            font-size: 13px;
+            font-weight: 800;
+
+            transition: 0.2s ease;
+        }
+
+        .complete-button:hover {
+            transform: translateY(-1px);
+            filter: brightness(0.95);
+        }
+
+        .complete-button.completed {
+            background: #0d6b49;
+        }
+
+        /* =========================================================
+       CONTENT CARDS
+    ========================================================== */
+        .lesson-section {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+
+            padding: clamp(22px,
+                    4vw,
+                    36px);
+
+            margin-bottom: 20px;
+
+            box-shadow: var(--shadow-sm);
+            scroll-margin-top: 96px;
+        }
+
+        .section-kicker {
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 850;
+
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+
+            margin-bottom: 6px;
+        }
+
+        .lesson-section h2 {
+            color: #152039;
+
+            font-size: clamp(1.35rem,
+                    3vw,
+                    1.85rem);
+
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+
+            margin-bottom: 15px;
+        }
+
+        .lesson-section h3 {
+            color: #1c2942;
+            font-size: 1.08rem;
+            line-height: 1.4;
+            margin: 24px 0 9px;
+        }
+
+        .lesson-section p {
+            color: var(--text-soft);
+            margin-bottom: 13px;
+        }
+
+        .lesson-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-section ul,
+        .lesson-section ol {
+            padding-left: 21px;
+            color: var(--text-soft);
+        }
+
+        .lesson-section li {
+            margin-bottom: 7px;
+        }
+
+        .lesson-section li::marker {
+            color: var(--primary);
+        }
+
+        /* =========================================================
+       INFO GRID
+    ========================================================== */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 13px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 17px;
+
+            background: var(--surface-soft);
+
+            border: 1px solid var(--border);
+
+            border-radius: 14px;
+        }
+
+        .info-card strong {
+            display: block;
+            color: #1a2740;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .info-card span {
+            color: var(--text-soft);
+            font-size: 13px;
+        }
+
+        /* =========================================================
+       CONCEPT BOX
+    ========================================================== */
+        .concept-box {
+            margin: 18px 0;
+
+            padding: 18px;
+
+            background: #f7f9ff;
+            border-left: 4px solid var(--primary);
+
+            border-radius: 0 13px 13px 0;
+        }
+
+        .concept-box strong {
+            display: block;
+            color: #20346f;
+            margin-bottom: 4px;
+        }
+
+        .concept-box p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* =========================================================
+       COMPARISON TABLE
+    ========================================================== */
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+
+            margin: 18px 0;
+        }
+
+        table {
+            width: 100%;
+            min-width: 570px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 13px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        th {
+            color: #1d2c4c;
+            background: #f7f9fc;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        td {
+            color: var(--text-soft);
+            font-size: 13px;
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        /* =========================================================
+       CALLOUTS
+    ========================================================== */
+        .callout {
+            display: flex;
+            gap: 13px;
+
+            padding: 17px;
+
+            border-radius: 14px;
+            margin: 18px 0;
+        }
+
+        .callout-icon {
+            flex: 0 0 34px;
+
+            width: 34px;
+            height: 34px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+        }
+
+        .callout-content strong {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+
+        .callout-content p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .callout.tip {
+            background: var(--primary-soft);
+            border: 1px solid #dce5ff;
+        }
+
+        .callout.tip .callout-icon {
+            background: #dbe5ff;
+            color: var(--primary);
+        }
+
+        .callout.tip strong {
+            color: #2944a0;
+        }
+
+        .callout.warning {
+            background: var(--orange-soft);
+            border: 1px solid #f3dfbd;
+        }
+
+        .callout.warning .callout-icon {
+            background: #ffe8c1;
+            color: var(--orange);
+        }
+
+        .callout.warning strong {
+            color: #8c570e;
+        }
+
+        /* =========================================================
+       STEP CARDS
+    ========================================================== */
+        .steps {
+            display: grid;
+            gap: 11px;
+            margin-top: 18px;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 34px 1fr;
+            gap: 12px;
+
+            padding: 14px;
+
+            background: #fbfcfe;
+            border: 1px solid var(--border);
+
+            border-radius: 13px;
+        }
+
+        .step-number {
+            width: 34px;
+            height: 34px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 10px;
+
+            color: var(--primary);
+            background: var(--primary-soft);
+
+            font-size: 12px;
+            font-weight: 850;
+        }
+
+        .step strong {
+            display: block;
+            color: #1d2940;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .step p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* =========================================================
+       PRACTICE
+    ========================================================== */
+        .practice-box {
+            background:
+                linear-gradient(135deg,
+                    #17233d,
+                    #223458);
+
+            color: #fff;
+
+            border-radius: var(--radius-lg);
+            padding: 26px;
+
+            margin-top: 20px;
+
+            box-shadow:
+                0 20px 50px rgba(23, 35, 61, 0.16);
+        }
+
+        .practice-box .section-kicker {
+            color: #9db4ff;
+        }
+
+        .practice-box h2 {
+            color: #fff;
+        }
+
+        .practice-box p,
+        .practice-box li {
+            color: #d5dded;
+        }
+
+        .practice-list {
+            margin-top: 12px;
+        }
+
+        /* =========================================================
+       FAQ
+    ========================================================== */
+        .faq-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .faq-question {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+
+            border: 0;
+            background: #fff;
+
+            padding: 16px;
+
+            color: #1b2740;
+            text-align: left;
+
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        .faq-icon {
+            flex: 0 0 auto;
+
+            width: 25px;
+            height: 25px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 7px;
+
+            background: var(--primary-soft);
+            color: var(--primary);
+
+            transition: 0.2s ease;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 16px 16px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* =========================================================
+       CHAPTER NAVIGATION
+    ========================================================== */
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+
+            margin-top: 25px;
+        }
+
+        .chapter-nav-card {
+            display: block;
+
+            padding: 18px;
+
+            background: #fff;
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-md);
+
+            transition: 0.2s ease;
+        }
+
+        .chapter-nav-card:hover {
+            border-color: #cdd8f8;
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-2px);
+        }
+
+        .chapter-nav-card.next {
+            text-align: right;
+        }
+
+        .nav-small {
+            display: block;
+
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+
+            margin-bottom: 5px;
+        }
+
+        .nav-title {
+            color: #1b2943;
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        /* =========================================================
+       FOOTER
+    ========================================================== */
+        .site-footer {
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+        }
+
+        .footer-inner {
+            max-width: var(--container);
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .footer-links a {
+            color: var(--text-soft);
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* =========================================================
+       BACK TO TOP
+    ========================================================== */
+        .back-top {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            width: 44px;
+            height: 44px;
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            background: rgba(255, 255, 255, 0.96);
+            color: var(--primary);
+
+            box-shadow: var(--shadow-md);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transform: translateY(10px);
+
+            transition: 0.2s ease;
+
+            z-index: 500;
+        }
+
+        .back-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* =========================================================
+       RESPONSIVE — TABLET
+    ========================================================== */
+        @media (max-width: 1020px) {
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                top: auto;
+            }
+
+            .toc {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .toc a {
+                border: 1px solid var(--border);
+            }
+
+            .sidebar-progress {
+                margin-top: 15px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .header-actions {
+                margin-left: auto;
+            }
+        }
+
+        /* =========================================================
+       RESPONSIVE — MOBILE
+    ========================================================== */
+        @media (max-width: 700px) {
+            .header-inner {
+                min-height: 66px;
+                padding: 0 15px;
+            }
+
+            .brand-text {
+                font-size: 13px;
+            }
+
+            .header-btn {
+                display: none;
+            }
+
+            .page-shell {
+                padding: 20px 14px 55px;
+            }
+
+            .breadcrumb {
+                font-size: 11px;
+            }
+
+            .chapter-hero {
+                border-radius: 22px;
+                padding: 26px 20px;
+            }
+
+            .chapter-title {
+                font-size: clamp(2rem,
+                        10vw,
+                        2.8rem);
+            }
+
+            .chapter-intro {
+                font-size: 14px;
+            }
+
+            .chapter-meta {
+                gap: 7px;
+            }
+
+            .meta-chip {
+                font-size: 11px;
+                padding: 7px 9px;
+            }
+
+            .complete-box {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .complete-button {
+                width: 100%;
+            }
+
+            .lesson-section {
+                padding: 20px 17px;
+                border-radius: 18px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-nav-card.next {
+                text-align: left;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* =========================================================
+       SMALL PHONES
+    ========================================================== */
+        @media (max-width: 390px) {
+            .brand-mark {
+                width: 34px;
+                height: 34px;
+                border-radius: 10px;
+            }
+
+            .brand-text {
+                max-width: 150px;
+                white-space: normal;
+                line-height: 1.25;
+            }
+
+            .mobile-menu {
+                width: 39px;
+                height: 39px;
+            }
+
+            .chapter-hero {
+                padding: 23px 16px;
+            }
+
+            .lesson-section {
+                padding: 18px 14px;
+            }
+
+            .practice-box {
+                padding: 20px 16px;
+            }
+        }
+
+        /* =========================================================
+       ACCESSIBILITY
+    ========================================================== */
+        :focus-visible {
+            outline: 3px solid rgba(49, 94, 251, 0.25);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+       READING PROGRESS
+  ========================================================== -->
+    <div class="reading-progress" aria-hidden="true">
+        <span id="readingProgress"></span>
+    </div>
+
+    <!-- =========================================================
+       HEADER
+  ========================================================== -->
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a href="../index.html" class="brand" aria-label="AI Learning Academy Home">
+                <span class="brand-mark" aria-hidden="true">AI</span>
+                <span class="brand-text">AI Learning Academy</span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#curriculum">Course</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="projects.html">Projects</a>
+                <a href="progress.html">Progress</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="chapter-02.html" class="header-btn">
+                    Next Chapter →
+                </a>
+
+                <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Open navigation"
+                    aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================================================
+       MAIN
+  ========================================================== -->
+    <main class="page-shell">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+
+            <a href="../index.html#curriculum">
+                Course
+            </a>
+
+            <span class="breadcrumb-separator">/</span>
+
+            <span aria-current="page">
+                Chapter 1
+            </span>
+        </nav>
+
+        <div class="content-layout">
+
+            <!-- =====================================================
+           SIDEBAR
+      ====================================================== -->
+            <aside class="sidebar">
+
+                <div class="sidebar-title">
+                    Chapter Contents
+                </div>
+
+                <ul class="toc" id="toc">
+
+                    <li>
+                        <a href="#overview">
+                            Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#computer">
+                            Computer क्या है?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#hardware-software">
+                            Hardware & Software
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#cpu">
+                            CPU
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ram-storage">
+                            RAM & Storage
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#operating-system">
+                            Operating System
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#files-folders">
+                            Files & Folders
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#browser">
+                            Browser
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#internet">
+                            Internet
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#website-webapp">
+                            Website vs Web App
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#cloud">
+                            Cloud
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#practice">
+                            Practice Lab
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="sidebar-progress">
+
+                    <div class="progress-head">
+                        <span>Chapter Progress</span>
+                        <span class="progress-value" id="progressPercent">
+                            0%
+                        </span>
+                    </div>
+
+                    <div class="progress-track">
+                        <span id="chapterProgress"></span>
+                    </div>
+
+                </div>
+
+            </aside>
+
+            <!-- =====================================================
+           ARTICLE
+      ====================================================== -->
+            <article class="article">
+
+                <!-- HERO -->
+                <header class="chapter-hero">
+
+                    <span class="chapter-label">
+                        LEVEL 0 · CHAPTER 01
+                    </span>
+
+                    <h1 class="chapter-title">
+                        Computer की Basic Knowledge
+                    </h1>
+
+                    <p class="chapter-intro">
+                        AI सीखने से पहले Computer की foundation मजबूत होना
+                        जरूरी है। इस chapter में हम Computer, Hardware,
+                        Software, CPU, RAM, Storage, Operating System,
+                        Files, Browser, Internet, Website, Web Application
+                        और Cloud को beginner-friendly तरीके से समझेंगे।
+                    </p>
+
+                    <div class="chapter-meta">
+
+                        <span class="meta-chip">
+                            📚 Beginner
+                        </span>
+
+                        <span class="meta-chip">
+                            ⏱️ Foundation Chapter
+                        </span>
+
+                        <span class="meta-chip">
+                            💻 Computer Fundamentals
+                        </span>
+
+                        <span class="meta-chip">
+                            🎯 AI Learning Foundation
+                        </span>
+
+                    </div>
+
+                </header>
+
+                <!-- COMPLETE -->
+                <div class="complete-box">
+
+                    <div class="complete-text">
+                        <strong id="completeTitle">
+                            Chapter पूरा करने के लिए तैयार?
+                        </strong>
+
+                        <span id="completeDescription">
+                            Lesson पढ़ने के बाद इसे complete mark करें।
+                        </span>
+                    </div>
+
+                    <button class="complete-button" id="completeButton" type="button">
+                        ✓ Mark as Complete
+                    </button>
+
+                </div>
+
+                <!-- ===================================================
+             OVERVIEW
+        ==================================================== -->
+                <section class="lesson-section" id="overview">
+
+                    <div class="section-kicker">
+                        Start Here
+                    </div>
+
+                    <h2>
+                        इस Chapter में क्या सीखेंगे?
+                    </h2>
+
+                    <p>
+                        यह chapter उन learners के लिए है जो Computer की
+                        basic terminology और working को शुरुआत से समझना
+                        चाहते हैं। AI tools और आगे की technical learning
+                        में यही concepts बार-बार काम आएंगे।
+                    </p>
+
+                    <div class="info-grid">
+
+                        <div class="info-card">
+                            <strong>Computer</strong>
+                            <span>
+                                Computer क्या है और basic level पर कैसे काम करता है।
+                            </span>
+                        </div>
+
+                        <div class="info-card">
+                            <strong>Hardware</strong>
+                            <span>
+                                Computer के physical components को समझना।
+                            </span>
+                        </div>
+
+                        <div class="info-card">
+                            <strong>Software</strong>
+                            <span>
+                                Programs और applications की भूमिका समझना।
+                            </span>
+                        </div>
+
+                        <div class="info-card">
+                            <strong>CPU, RAM & Storage</strong>
+                            <span>
+                                Processing, temporary memory और data storage का अंतर।
+                            </span>
+                        </div>
+
+                        <div class="info-card">
+                            <strong>Operating System</strong>
+                            <span>
+                                Windows और Linux का basic परिचय।
+                            </span>
+                        </div>
+
+                        <div class="info-card">
+                            <strong>Internet & Cloud</strong>
+                            <span>
+                                Browser, Internet, Web और Cloud की foundation।
+                            </span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             COMPUTER
+        ==================================================== -->
+                <section class="lesson-section" id="computer">
+
+                    <div class="section-kicker">
+                        Concept 01
+                    </div>
+
+                    <h2>
+                        Computer क्या है?
+                    </h2>
+
+                    <p>
+                        Computer एक electronic system है जो दिए गए
+                        instructions और data के आधार पर information को
+                        process करने में मदद करता है।
+                    </p>
+
+                    <p>
+                        आसान भाषा में समझें तो Computer का basic workflow
+                        कुछ इस तरह देखा जा सकता है:
+                    </p>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            Input → Processing → Output → Storage
+                        </strong>
+
+                        <p>
+                            हम data या instructions देते हैं, computer उन्हें
+                            process करता है, result देता है और जरूरत के अनुसार
+                            information को store भी किया जा सकता है।
+                        </p>
+
+                    </div>
+
+                    <h3>
+                        Computer के basic examples
+                    </h3>
+
+                    <ul>
+                        <li>Desktop Computer</li>
+                        <li>Laptop</li>
+                        <li>कुछ computing systems और smart devices</li>
+                    </ul>
+
+                    <div class="callout tip">
+
+                        <div class="callout-icon">💡</div>
+
+                        <div class="callout-content">
+                            <strong>AI से इसका क्या connection है?</strong>
+
+                            <p>
+                                AI applications भी computing systems पर run
+                                होती हैं। इसलिए Computer की basic understanding
+                                आगे AI tools और programming समझने में foundation
+                                देती है।
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             HARDWARE SOFTWARE
+        ==================================================== -->
+                <section class="lesson-section" id="hardware-software">
+
+                    <div class="section-kicker">
+                        Concept 02
+                    </div>
+
+                    <h2>
+                        Hardware और Software क्या हैं?
+                    </h2>
+
+                    <p>
+                        Computer system को समझने के लिए Hardware और Software
+                        का difference समझना बहुत जरूरी है।
+                    </p>
+
+                    <div class="table-wrap">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Concept</th>
+                                    <th>Meaning</th>
+                                    <th>Examples</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        Hardware
+                                    </td>
+
+                                    <td>
+                                        Computer system के physical parts
+                                        जिन्हें physically देखा या छुआ जा सकता है।
+                                    </td>
+
+                                    <td>
+                                        CPU, RAM, Storage, Keyboard, Mouse, Monitor
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Software
+                                    </td>
+
+                                    <td>
+                                        Programs और instructions जो computer
+                                        को specific काम करने में मदद करते हैं।
+                                    </td>
+
+                                    <td>
+                                        Operating System, Browser, Applications
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            Simple Rule
+                        </strong>
+
+                        <p>
+                            Hardware को आप physical component के रूप में
+                            समझ सकते हैं, जबकि Software instructions और
+                            programs का हिस्सा है।
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             CPU
+        ==================================================== -->
+                <section class="lesson-section" id="cpu">
+
+                    <div class="section-kicker">
+                        Concept 03
+                    </div>
+
+                    <h2>
+                        CPU क्या है?
+                    </h2>
+
+                    <p>
+                        CPU का पूरा नाम
+                        <strong>Central Processing Unit</strong>
+                        है।
+                    </p>
+
+                    <p>
+                        Basic level पर CPU को computer का मुख्य processing
+                        component समझ सकते हैं। यह instructions को process
+                        करने में महत्वपूर्ण भूमिका निभाता है।
+                    </p>
+
+                    <h3>
+                        CPU को आसान example से समझें
+                    </h3>
+
+                    <p>
+                        मान लीजिए आपने computer को कोई calculation करने
+                        के लिए instruction दिया। उस task को process करने
+                        वाले system के महत्वपूर्ण हिस्सों में CPU शामिल होता है।
+                    </p>
+
+                    <div class="callout tip">
+
+                        <div class="callout-icon">🧠</div>
+
+                        <div class="callout-content">
+                            <strong>याद रखने वाली बात</strong>
+
+                            <p>
+                                CPU = Central Processing Unit. Computer में
+                                processing tasks के लिए यह एक मुख्य component है।
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             RAM STORAGE
+        ==================================================== -->
+                <section class="lesson-section" id="ram-storage">
+
+                    <div class="section-kicker">
+                        Concept 04
+                    </div>
+
+                    <h2>
+                        RAM और Storage क्या हैं?
+                    </h2>
+
+                    <p>
+                        RAM और Storage दोनों computer में data से जुड़े
+                        important concepts हैं, लेकिन दोनों का काम एक जैसा
+                        नहीं होता।
+                    </p>
+
+                    <div class="table-wrap">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>RAM</th>
+                                    <th>Storage</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        Computer की working के दौरान temporary
+                                        data और active tasks के लिए उपयोगी memory।
+                                    </td>
+
+                                    <td>
+                                        Files, applications और अन्य data को
+                                        store करने के लिए उपयोग किया जाता है।
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Active work से closely जुड़ी होती है।
+                                    </td>
+
+                                    <td>
+                                        Long-term data storage के लिए उपयोगी होती है।
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <h3>
+                        Storage के examples
+                    </h3>
+
+                    <ul>
+                        <li>SSD</li>
+                        <li>Hard Disk</li>
+                        <li>External Storage Devices</li>
+                    </ul>
+
+                    <div class="callout warning">
+
+                        <div class="callout-icon">⚠️</div>
+
+                        <div class="callout-content">
+                            <strong>Common confusion</strong>
+
+                            <p>
+                                RAM और Storage को एक ही चीज समझना सही नहीं है।
+                                दोनों computer system में अलग roles निभाते हैं।
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             OPERATING SYSTEM
+        ==================================================== -->
+                <section class="lesson-section" id="operating-system">
+
+                    <div class="section-kicker">
+                        Concept 05
+                    </div>
+
+                    <h2>
+                        Operating System क्या है?
+                    </h2>
+
+                    <p>
+                        Operating System या OS वह fundamental software
+                        environment है जो computer के hardware और software
+                        के साथ interaction को manage करने में महत्वपूर्ण
+                        भूमिका निभाता है।
+                    </p>
+
+                    <p>
+                        जब आप computer start करते हैं और desktop, files,
+                        applications तथा system controls के साथ काम करते हैं,
+                        तो Operating System उस environment का महत्वपूर्ण
+                        हिस्सा होता है।
+                    </p>
+
+                    <h3>
+                        Windows और Linux का परिचय
+                    </h3>
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Windows</th>
+                                    <th>Linux</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        Microsoft का popular operating system।
+                                    </td>
+
+                                    <td>
+                                        Linux एक open-source operating system family
+                                        है जिसके कई distributions उपलब्ध हैं।
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Desktop और सामान्य computing में व्यापक उपयोग।
+                                    </td>
+
+                                    <td>
+                                        Development, servers और कई technical
+                                        environments में भी उपयोग किया जाता है।
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            AI Learner के लिए क्यों जरूरी?
+                        </strong>
+
+                        <p>
+                            आगे चलकर programming, development और AI tools
+                            के साथ काम करते समय Operating System की basic
+                            understanding उपयोगी होगी।
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             FILES FOLDERS
+        ==================================================== -->
+                <section class="lesson-section" id="files-folders">
+
+                    <div class="section-kicker">
+                        Concept 06
+                    </div>
+
+                    <h2>
+                        Files और Folders कैसे काम करते हैं?
+                    </h2>
+
+                    <p>
+                        Computer में information को व्यवस्थित रखने के लिए
+                        Files और Folders का उपयोग किया जाता है।
+                    </p>
+
+                    <h3>
+                        File क्या है?
+                    </h3>
+
+                    <p>
+                        File एक digital information unit हो सकती है जिसमें
+                        text, image, document, code या अन्य प्रकार का data
+                        रखा जा सकता है।
+                    </p>
+
+                    <h3>
+                        Folder क्या है?
+                    </h3>
+
+                    <p>
+                        Folder files को organize करने में मदद करता है।
+                        एक folder के अंदर दूसरी files और folders भी
+                        रखे जा सकते हैं।
+                    </p>
+
+                    <div class="steps">
+
+                        <div class="step">
+                            <span class="step-number">1</span>
+
+                            <div>
+                                <strong>Folder बनाएं</strong>
+
+                                <p>
+                                    अपने study material के लिए एक dedicated folder
+                                    बनाएं।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">2</span>
+
+                            <div>
+                                <strong>Files organize करें</strong>
+
+                                <p>
+                                    Documents, images और notes को appropriate
+                                    folders में रखें।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">3</span>
+
+                            <div>
+                                <strong>Meaningful names रखें</strong>
+
+                                <p>
+                                    Files को ऐसे नाम दें जिससे बाद में उन्हें
+                                    आसानी से खोज सकें।
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             BROWSER
+        ==================================================== -->
+                <section class="lesson-section" id="browser">
+
+                    <div class="section-kicker">
+                        Concept 07
+                    </div>
+
+                    <h2>
+                        Browser क्या है?
+                    </h2>
+
+                    <p>
+                        Browser एक software application है जिसका उपयोग
+                        websites और web content को access करने के लिए किया
+                        जाता है।
+                    </p>
+
+                    <h3>
+                        Browser से क्या कर सकते हैं?
+                    </h3>
+
+                    <ul>
+                        <li>Websites खोल सकते हैं।</li>
+                        <li>Search engines का उपयोग कर सकते हैं।</li>
+                        <li>Web applications access कर सकते हैं।</li>
+                        <li>Online information पढ़ सकते हैं।</li>
+                        <li>Web-based tools का उपयोग कर सकते हैं।</li>
+                    </ul>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            Browser ≠ Internet
+                        </strong>
+
+                        <p>
+                            Browser एक software tool है। Internet एक global
+                            network infrastructure है। दोनों को एक ही चीज
+                            नहीं समझना चाहिए।
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             INTERNET
+        ==================================================== -->
+                <section class="lesson-section" id="internet">
+
+                    <div class="section-kicker">
+                        Concept 08
+                    </div>
+
+                    <h2>
+                        Internet क्या है?
+                    </h2>
+
+                    <p>
+                        Internet interconnected networks का global system
+                        है जिसके माध्यम से devices और computer systems
+                        information और services का आदान-प्रदान कर सकते हैं।
+                    </p>
+
+                    <h3>
+                        जब आप कोई website खोलते हैं
+                    </h3>
+
+                    <div class="steps">
+
+                        <div class="step">
+
+                            <span class="step-number">1</span>
+
+                            <div>
+                                <strong>
+                                    आप browser में web address डालते हैं
+                                </strong>
+
+                                <p>
+                                    Browser उस requested web resource को access
+                                    करने की कोशिश करता है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="step">
+
+                            <span class="step-number">2</span>
+
+                            <div>
+                                <strong>
+                                    Network के माध्यम से request जाती है
+                                </strong>
+
+                                <p>
+                                    आपका device network के जरिए required
+                                    service तक request भेजता है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="step">
+
+                            <span class="step-number">3</span>
+
+                            <div>
+                                <strong>
+                                    Web content वापस आता है
+                                </strong>
+
+                                <p>
+                                    Browser received content को process करके
+                                    आपके सामने web page के रूप में दिखाता है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             WEBSITE WEB APP
+        ==================================================== -->
+                <section class="lesson-section" id="website-webapp">
+
+                    <div class="section-kicker">
+                        Concept 09
+                    </div>
+
+                    <h2>
+                        Website और Web Application में अंतर
+                    </h2>
+
+                    <p>
+                        Website और Web Application दोनों browser के माध्यम
+                        से access किए जा सकते हैं, लेकिन उनका primary
+                        purpose अलग हो सकता है।
+                    </p>
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Website</th>
+                                    <th>Web Application</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        Information या content provide करना
+                                        इसका प्रमुख उद्देश्य हो सकता है।
+                                    </td>
+
+                                    <td>
+                                        User interaction और tasks perform करवाना
+                                        इसका प्रमुख उद्देश्य हो सकता है।
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Articles, information pages, documentation
+                                        जैसे use cases।
+                                    </td>
+
+                                    <td>
+                                        Online editors, dashboards, interactive
+                                        tools जैसे use cases।
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="callout tip">
+
+                        <div class="callout-icon">🌐</div>
+
+                        <div class="callout-content">
+                            <strong>AI से connection</strong>
+
+                            <p>
+                                बहुत से modern AI tools browser-based web
+                                applications के रूप में उपयोग किए जाते हैं।
+                                इसलिए यह difference आगे useful रहेगा।
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             CLOUD
+        ==================================================== -->
+                <section class="lesson-section" id="cloud">
+
+                    <div class="section-kicker">
+                        Concept 10
+                    </div>
+
+                    <h2>
+                        Cloud क्या है?
+                    </h2>
+
+                    <p>
+                        Cloud computing का basic idea यह है कि computing
+                        resources, storage या services को internet/network
+                        के माध्यम से remotely access किया जा सकता है।
+                    </p>
+
+                    <h3>
+                        Cloud के practical examples
+                    </h3>
+
+                    <ul>
+                        <li>Online file storage</li>
+                        <li>Remote computing resources</li>
+                        <li>Online applications और services</li>
+                        <li>Data को remotely access करना</li>
+                    </ul>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            Simple understanding
+                        </strong>
+
+                        <p>
+                            Cloud को केवल "internet पर files" समझना पर्याप्त
+                            नहीं है। Cloud में storage के अलावा computing,
+                            applications और दूसरी services भी शामिल हो सकती हैं।
+                        </p>
+
+                    </div>
+
+                    <div class="callout tip">
+
+                        <div class="callout-icon">☁️</div>
+
+                        <div class="callout-content">
+                            <strong>
+                                AI में Cloud क्यों important है?
+                            </strong>
+
+                            <p>
+                                Modern AI services और applications में remote
+                                computing infrastructure और online services का
+                                उपयोग किया जा सकता है। इसलिए Cloud की basic
+                                understanding आगे के AI chapters में काम आएगी।
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             COMPLETE CONCEPT MAP
+        ==================================================== -->
+                <section class="lesson-section">
+
+                    <div class="section-kicker">
+                        Quick Concept Map
+                    </div>
+
+                    <h2>
+                        पूरे Chapter को एक बार में समझें
+                    </h2>
+
+                    <div class="steps">
+
+                        <div class="step">
+                            <span class="step-number">01</span>
+
+                            <div>
+                                <strong>Computer</strong>
+
+                                <p>
+                                    Data और instructions को process करने वाला
+                                    electronic computing system।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">02</span>
+
+                            <div>
+                                <strong>Hardware</strong>
+
+                                <p>
+                                    Computer के physical components।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">03</span>
+
+                            <div>
+                                <strong>Software</strong>
+
+                                <p>
+                                    Programs और instructions।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">04</span>
+
+                            <div>
+                                <strong>CPU</strong>
+
+                                <p>
+                                    Processing tasks के लिए मुख्य components में से एक।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">05</span>
+
+                            <div>
+                                <strong>RAM & Storage</strong>
+
+                                <p>
+                                    Working memory और persistent data storage
+                                    के अलग concepts।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">06</span>
+
+                            <div>
+                                <strong>Operating System</strong>
+
+                                <p>
+                                    Computer के software/hardware environment को
+                                    manage करने वाला fundamental software।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">07</span>
+
+                            <div>
+                                <strong>Browser + Internet</strong>
+
+                                <p>
+                                    Browser web content access करने का software
+                                    है और Internet global network system है।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-number">08</span>
+
+                            <div>
+                                <strong>Cloud</strong>
+
+                                <p>
+                                    Remote computing, storage और services तक
+                                    network के माध्यम से access।
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             PRACTICE LAB
+        ==================================================== -->
+                <section class="lesson-section" id="practice">
+
+                    <div class="practice-box">
+
+                        <div class="section-kicker">
+                            Practice Lab
+                        </div>
+
+                        <h2>
+                            अब खुद करके देखो
+                        </h2>
+
+                        <p>
+                            केवल पढ़ना पर्याप्त नहीं है। नीचे दिए गए छोटे
+                            practical tasks करके अपने concepts check करें।
+                        </p>
+
+                        <ol class="practice-list">
+
+                            <li>
+                                अपने computer में एक नया folder बनाइए।
+                            </li>
+
+                            <li>
+                                उस folder के अंदर एक sub-folder बनाइए।
+                            </li>
+
+                            <li>
+                                कोई text/document file बनाकर उसका meaningful
+                                नाम रखिए।
+                            </li>
+
+                            <li>
+                                अपने computer में Operating System का नाम पहचानिए।
+                            </li>
+
+                            <li>
+                                अपने browser का नाम पहचानिए।
+                            </li>
+
+                            <li>
+                                RAM और Storage में अपने शब्दों में difference लिखिए।
+                            </li>
+
+                            <li>
+                                Hardware और Software के कम से कम तीन-तीन
+                                examples लिखिए।
+                            </li>
+
+                            <li>
+                                Website और Web Application के बीच difference
+                                अपने शब्दों में समझाइए।
+                            </li>
+
+                            <li>
+                                Cloud का एक practical use case लिखिए।
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             QUICK REVISION
+        ==================================================== -->
+                <section class="lesson-section">
+
+                    <div class="section-kicker">
+                        Quick Revision
+                    </div>
+
+                    <h2>
+                        10 चीजें जो आपको याद रहनी चाहिए
+                    </h2>
+
+                    <ol>
+
+                        <li>Computer data और instructions को process करता है।</li>
+
+                        <li>Hardware physical components होते हैं।</li>
+
+                        <li>Software programs और instructions से संबंधित है।</li>
+
+                        <li>CPU processing में महत्वपूर्ण भूमिका निभाता है।</li>
+
+                        <li>RAM और Storage अलग concepts हैं।</li>
+
+                        <li>Operating System computer environment का fundamental software है।</li>
+
+                        <li>Files और Folders data को organize करने में मदद करते हैं।</li>
+
+                        <li>Browser web content access करने का software है।</li>
+
+                        <li>Website और Web Application के purposes अलग हो सकते हैं।</li>
+
+                        <li>Cloud remote computing, storage और services से जुड़ा concept है।</li>
+
+                    </ol>
+
+                </section>
+
+                <!-- ===================================================
+             FAQ
+        ==================================================== -->
+                <section class="lesson-section" id="faq">
+
+                    <div class="section-kicker">
+                        FAQ
+                    </div>
+
+                    <h2>
+                        Chapter 1 के Common Questions
+                    </h2>
+
+                    <div class="faq-list">
+
+                        <div class="faq-item">
+
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                Computer और Software में क्या relation है?
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                            <div class="faq-answer">
+                                <p>
+                                    Computer एक complete computing system है,
+                                    जबकि Software उसके instructions और programs
+                                    से संबंधित होता है। Software computer system
+                                    पर specific tasks करवाने में मदद करता है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-item">
+
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                क्या RAM और Storage एक ही चीज हैं?
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                            <div class="faq-answer">
+                                <p>
+                                    नहीं। RAM working/active tasks से संबंधित
+                                    memory है, जबकि Storage data और files को
+                                    store करने के लिए उपयोग होता है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-item">
+
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                Browser और Internet में क्या difference है?
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                            <div class="faq-answer">
+                                <p>
+                                    Browser एक software application है जिसका
+                                    उपयोग web content access करने के लिए होता है।
+                                    Internet interconnected networks का global
+                                    system है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-item">
+
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                Website और Web Application में क्या अंतर है?
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                            <div class="faq-answer">
+                                <p>
+                                    Website का मुख्य उद्देश्य information/content
+                                    provide करना हो सकता है, जबकि Web Application
+                                    interactive tasks और functionality provide
+                                    करने के लिए designed हो सकती है।
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-item">
+
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                AI सीखने से पहले Computer basics क्यों?
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                            <div class="faq-answer">
+                                <p>
+                                    आगे AI tools, programming, files, browsers,
+                                    applications, operating systems और cloud
+                                    services के साथ काम करते समय ये fundamentals
+                                    लगातार उपयोगी होते हैं।
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             FINAL TAKEAWAY
+        ==================================================== -->
+                <section class="lesson-section">
+
+                    <div class="section-kicker">
+                        Final Takeaway
+                    </div>
+
+                    <h2>
+                        Chapter 1 का Final Summary
+                    </h2>
+
+                    <p>
+                        इस chapter का उद्देश्य आपको Computer की basic
+                        vocabulary और working concepts से comfortable
+                        बनाना है।
+                    </p>
+
+                    <p>
+                        अब आपको Computer, Hardware, Software, CPU, RAM,
+                        Storage, Operating System, Windows, Linux, Files,
+                        Folders, Browser, Internet, Website, Web Application
+                        और Cloud जैसे fundamental concepts की foundation
+                        समझ होनी चाहिए।
+                    </p>
+
+                    <div class="concept-box">
+
+                        <strong>
+                            अगला कदम
+                        </strong>
+
+                        <p>
+                            अब आप Chapter 2 में Internet और Digital Work की
+                            तरफ बढ़ सकते हैं।
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- ===================================================
+             PREVIOUS / NEXT
+        ==================================================== -->
+                <nav class="chapter-navigation" aria-label="Chapter navigation">
+
+                    <a href="../index.html#curriculum" class="chapter-nav-card">
+                        <span class="nav-small">
+                            ← Back
+                        </span>
+
+                        <span class="nav-title">
+                            Course Curriculum
+                        </span>
+                    </a>
+
+                    <a href="chapter-02.html" class="chapter-nav-card next">
+                        <span class="nav-small">
+                            Next Chapter →
+                        </span>
+
+                        <span class="nav-title">
+                            Chapter 2: Internet & Digital Work
+                        </span>
+                    </a>
+
+                </nav>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <p class="footer-copy">
+                © <span id="currentYear"></span>
+                AI Learning Academy. Chapter 1.
+            </p>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="glossary.html">
+                    Glossary
+                </a>
+
+                <a href="prompt-library.html">
+                    Prompt Library
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="progress.html">
+                    Progress
+                </a>
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop" type="button" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- =========================================================
+       INTERNAL JAVASCRIPT
+  ========================================================== -->
+    <script>
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /* =======================================================
+               CONFIG
+            ======================================================== */
+
+            const STORAGE_KEY = "ai-learning-academy-progress";
+            const CURRENT_CHAPTER = 1;
+
+            /* =======================================================
+               YEAR
+            ======================================================== */
+
+            const yearElement =
+                document.getElementById("currentYear");
+
+            if (yearElement) {
+                yearElement.textContent =
+                    new Date().getFullYear();
+            }
+
+            /* =======================================================
+               MOBILE MENU
+            ======================================================== */
+
+            const mobileMenu =
+                document.getElementById("mobileMenu");
+
+            const headerNav =
+                document.querySelector(".header-nav");
+
+            if (mobileMenu && headerNav) {
+
+                mobileMenu.addEventListener("click", () => {
+
+                    const isOpen =
+                        headerNav.classList.toggle("mobile-open");
+
+                    mobileMenu.setAttribute(
+                        "aria-expanded",
+                        String(isOpen)
+                    );
+
+                    if (isOpen) {
+                        headerNav.style.display = "flex";
+                        headerNav.style.position = "absolute";
+                        headerNav.style.top = "66px";
+                        headerNav.style.left = "14px";
+                        headerNav.style.right = "14px";
+                        headerNav.style.padding = "10px";
+                        headerNav.style.flexDirection = "column";
+                        headerNav.style.alignItems = "stretch";
+                        headerNav.style.background = "#fff";
+                        headerNav.style.border = "1px solid #e6eaf1";
+                        headerNav.style.borderRadius = "14px";
+                        headerNav.style.boxShadow =
+                            "0 18px 40px rgba(27,39,70,.12)";
+                    } else {
+                        headerNav.removeAttribute("style");
+                    }
+                });
+
+                document.addEventListener("click", (event) => {
+
+                    if (
+                        window.innerWidth <= 1020 &&
+                        headerNav.classList.contains("mobile-open") &&
+                        !headerNav.contains(event.target) &&
+                        !mobileMenu.contains(event.target)
+                    ) {
+                        headerNav.classList.remove("mobile-open");
+                        headerNav.removeAttribute("style");
+                        mobileMenu.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+                    }
+
+                });
+
+            }
+
+            /* =======================================================
+               READING PROGRESS
+            ======================================================== */
+
+            const readingProgress =
+                document.getElementById("readingProgress");
+
+            const chapterProgress =
+                document.getElementById("chapterProgress");
+
+            const progressPercent =
+                document.getElementById("progressPercent");
+
+            function updateReadingProgress() {
+
+                const scrollTop =
+                    window.scrollY;
+
+                const documentHeight =
+                    document.documentElement.scrollHeight -
+                    window.innerHeight;
+
+                const percentage =
+                    documentHeight > 0
+                        ? Math.min(
+                            100,
+                            Math.max(
+                                0,
+                                (scrollTop / documentHeight) * 100
+                            )
+                        )
+                        : 0;
+
+                if (readingProgress) {
+                    readingProgress.style.width =
+                        percentage.toFixed(1) + "%";
+                }
+
+                if (chapterProgress) {
+                    chapterProgress.style.width =
+                        percentage.toFixed(1) + "%";
+                }
+
+                if (progressPercent) {
+                    progressPercent.textContent =
+                        Math.round(percentage) + "%";
+                }
+            }
+
+            window.addEventListener(
+                "scroll",
+                updateReadingProgress,
+                { passive: true }
+            );
+
+            updateReadingProgress();
+
+            /* =======================================================
+               BACK TO TOP
+            ======================================================== */
+
+            const backTop =
+                document.getElementById("backTop");
+
+            if (backTop) {
+
+                window.addEventListener(
+                    "scroll",
+                    () => {
+
+                        if (window.scrollY > 500) {
+                            backTop.classList.add("visible");
+                        } else {
+                            backTop.classList.remove("visible");
+                        }
+
+                    },
+                    { passive: true }
+                );
+
+                backTop.addEventListener(
+                    "click",
+                    () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+                    }
+                );
+            }
+
+            /* =======================================================
+               FAQ ACCORDION
+            ======================================================== */
+
+            const faqButtons =
+                document.querySelectorAll(".faq-question");
+
+            faqButtons.forEach((button) => {
+
+                button.addEventListener("click", () => {
+
+                    const item =
+                        button.closest(".faq-item");
+
+                    const isOpen =
+                        item.classList.contains("open");
+
+                    document
+                        .querySelectorAll(".faq-item.open")
+                        .forEach((openItem) => {
+
+                            openItem.classList.remove("open");
+
+                            const openButton =
+                                openItem.querySelector(
+                                    ".faq-question"
+                                );
+
+                            if (openButton) {
+                                openButton.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+                            }
+
+                        });
+
+                    if (!isOpen) {
+
+                        item.classList.add("open");
+
+                        button.setAttribute(
+                            "aria-expanded",
+                            "true"
+                        );
+
+                    }
+
+                });
+
+            });
+
+            /* =======================================================
+               CHAPTER PROGRESS STORAGE
+            ======================================================== */
+
+            function getProgress() {
+
+                try {
+
+                    const saved =
+                        localStorage.getItem(
+                            STORAGE_KEY
+                        );
+
+                    return saved
+                        ? JSON.parse(saved)
+                        : {};
+
+                } catch (error) {
+
+                    return {};
+
+                }
+            }
+
+            function saveProgress(progress) {
+
+                try {
+
+                    localStorage.setItem(
+                        STORAGE_KEY,
+                        JSON.stringify(progress)
+                    );
+
+                } catch (error) {
+
+                    console.warn(
+                        "Progress could not be saved.",
+                        error
+                    );
+
+                }
+            }
+
+            function isChapterComplete() {
+
+                const progress =
+                    getProgress();
+
+                return Boolean(
+                    progress[CURRENT_CHAPTER]
+                );
+
+            }
+
+            function updateCompleteUI() {
+
+                const button =
+                    document.getElementById(
+                        "completeButton"
+                    );
+
+                const title =
+                    document.getElementById(
+                        "completeTitle"
+                    );
+
+                const description =
+                    document.getElementById(
+                        "completeDescription"
+                    );
+
+                if (!button) return;
+
+                if (isChapterComplete()) {
+
+                    button.textContent =
+                        "✓ Completed";
+
+                    button.classList.add(
+                        "completed"
+                    );
+
+                    if (title) {
+                        title.textContent =
+                            "Chapter 1 complete! 🎉";
+                    }
+
+                    if (description) {
+                        description.textContent =
+                            "आपकी progress इस device पर save है।";
+                    }
+
+                } else {
+
+                    button.textContent =
+                        "✓ Mark as Complete";
+
+                    button.classList.remove(
+                        "completed"
+                    );
+
+                    if (title) {
+                        title.textContent =
+                            "Chapter पूरा करने के लिए तैयार?";
+                    }
+
+                    if (description) {
+                        description.textContent =
+                            "Lesson पढ़ने के बाद इसे complete mark करें।";
+                    }
+
+                }
+
+            }
+
+            const completeButton =
+                document.getElementById(
+                    "completeButton"
+                );
+
+            if (completeButton) {
+
+                completeButton.addEventListener(
+                    "click",
+                    () => {
+
+                        const progress =
+                            getProgress();
+
+                        if (progress[CURRENT_CHAPTER]) {
+
+                            delete progress[
+                                CURRENT_CHAPTER
+                            ];
+
+                        } else {
+
+                            progress[
+                                CURRENT_CHAPTER
+                            ] = true;
+
+                        }
+
+                        saveProgress(progress);
+                        updateCompleteUI();
+
+                    }
+                );
+
+            }
+
+            updateCompleteUI();
+
+            /* =======================================================
+               ACTIVE TABLE OF CONTENTS
+            ======================================================== */
+
+            const tocLinks =
+                document.querySelectorAll(
+                    "#toc a"
+                );
+
+            const sections =
+                Array.from(tocLinks)
+                    .map((link) => {
+
+                        const id =
+                            link.getAttribute("href");
+
+                        return id
+                            ? document.querySelector(id)
+                            : null;
+
+                    })
+                    .filter(Boolean);
+
+            function updateActiveTOC() {
+
+                let currentSection = null;
+
+                sections.forEach((section) => {
+
+                    const top =
+                        section.getBoundingClientRect().top;
+
+                    if (top <= 140) {
+                        currentSection = section;
+                    }
+
+                });
+
+                tocLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
+
+                if (currentSection) {
+
+                    const activeLink =
+                        document.querySelector(
+                            '#toc a[href="#' +
+                            currentSection.id +
+                            '"]'
+                        );
+
+                    if (activeLink) {
+                        activeLink.classList.add("active");
+                    }
+
+                }
+
+            }
+
+            window.addEventListener(
+                "scroll",
+                updateActiveTOC,
+                { passive: true }
+            );
+
+            updateActiveTOC();
+
+            /* =======================================================
+               SMOOTH TOC NAVIGATION
+            ======================================================== */
+
+            tocLinks.forEach((link) => {
+
+                link.addEventListener("click", (event) => {
+
+                    const targetId =
+                        link.getAttribute("href");
+
+                    if (!targetId || !targetId.startsWith("#")) {
+                        return;
+                    }
+
+                    const target =
+                        document.querySelector(
+                            targetId
+                        );
+
+                    if (!target) return;
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                    history.replaceState(
+                        null,
+                        "",
+                        targetId
+                    );
+
+                });
+
+            });
+
+            /* =======================================================
+               KEYBOARD ACCESSIBILITY FOR FAQ
+            ======================================================== */
+
+            faqButtons.forEach((button) => {
+
+                button.addEventListener(
+                    "keydown",
+                    (event) => {
+
+                        if (
+                            event.key === "Enter" ||
+                            event.key === " "
+                        ) {
+
+                            event.preventDefault();
+                            button.click();
+
+                        }
+
+                    }
+                );
+
+            });
+
+            /* =======================================================
+               EXTERNAL LINKS
+            ======================================================== */
+
+            document
+                .querySelectorAll("a[href]")
+                .forEach((link) => {
+
+                    const href =
+                        link.getAttribute("href");
+
+                    if (
+                        href &&
+                        /^https?:\/\//i.test(href) &&
+                        !href.includes(
+                            window.location.hostname
+                        )
+                    ) {
+
+                        link.setAttribute(
+                            "target",
+                            "_blank"
+                        );
+
+                        link.setAttribute(
+                            "rel",
+                            "noopener noreferrer"
+                        );
+
+                    }
+
+                });
+
+            /* =======================================================
+               HASH ON LOAD
+            ======================================================== */
+
+            if (window.location.hash) {
+
+                const target =
+                    document.querySelector(
+                        window.location.hash
+                    );
+
+                if (target) {
+
+                    setTimeout(() => {
+
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }, 150);
+
+                }
+
+            }
+
+            /* =======================================================
+               CONSOLE BRANDING
+            ======================================================== */
+
+            console.log(
+                "%cAI Learning Academy",
+                "font-size:18px;font-weight:800;color:#315efb;"
+            );
+
+            console.log(
+                "Chapter 01 loaded successfully."
+            );
+
+        });
+    </script>
+
+</body>
+
+</html>

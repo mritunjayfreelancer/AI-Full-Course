@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Chapter 5: Generative AI क्या है? | AI Learning Academy</title>
+    <meta name="description"
+        content="Chapter 5 में जानें Generative AI क्या है — जेनरेटिव एआई कैसे काम करता है, टेक्स्ट, इमेज और वीडियो जनरेशन, तथा इसके मुख्य उपयोग।">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="AI Learning Academy">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com/chapters/chapter-05.html">
+
+    <!-- =========================================================
+        OPEN GRAPH
+    ========================================================== -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:site_name" content="AI Learning Academy">
+    <meta property="og:title" content="Chapter 5: Generative AI क्या है?">
+    <meta property="og:description"
+        content="Generative AI की complete beginner-friendly guide. जानिए text, image और media generate करने वाली AI तकनीक को आसान हिंदी में।">
+    <meta property="og:url" content="https://example.com/chapters/chapter-05.html">
+    <meta property="og:image" content="https://example.com/assets/og-chapter-05.jpg">
+
+    <!-- =========================================================
+        TWITTER / X
+    ========================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chapter 5: Generative AI क्या है?">
+    <meta name="twitter:description" content="Generative AI की complete Hindi learning guide.">
+
+    <!-- =========================================================
+        STRUCTURED DATA
+    ========================================================== -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Learning Course - Chapter 5: Generative AI क्या है?",
+    "description": "Generative AI सीखने के लिए Chapter 5 जिसमें text, image और media generation की बुनियादी बातें शामिल हैं।",
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Learning Academy",
+      "url": "https://example.com/"
+    },
+    "inLanguage": "hi",
+    "educationalLevel": "Beginner to Intermediate",
+    "isAccessibleForFree": true,
+    "courseMode": "online"
+  }
+  </script>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Chapter 5: Generative AI क्या है?",
+    "description": "Generative AI basics complete beginner-friendly chapter.",
+    "inLanguage": "hi",
+    "author": {
+      "@type": "Organization",
+      "name": "AI Learning Academy"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Learning Academy"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://example.com/chapters/chapter-05.html"
+    }
+  }
+  </script>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Course",
+        "item": "https://example.com/#curriculum"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Chapter 5",
+        "item": "https://example.com/chapters/chapter-05.html"
+      }
+    ]
+  }
+  </script>
+
+    <!-- =========================================================
+        INLINE CSS
+    ========================================================== -->
+    <style>
+        /* =========================================================
+        RESET
+    ========================================================== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans Devanagari",
+                Arial,
+                sans-serif;
+
+            color: #172033;
+            background: #f7f9fc;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        ::selection {
+            background: #dbe7ff;
+            color: #10204d;
+        }
+
+        /* =========================================================
+        DESIGN TOKENS
+    ========================================================== */
+        :root {
+            --primary: #315efb;
+            --primary-dark: #2346c8;
+            --primary-soft: #edf2ff;
+
+            --text: #172033;
+            --text-soft: #566176;
+            --text-muted: #778196;
+
+            --white: #ffffff;
+            --surface: #ffffff;
+            --surface-soft: #f8faff;
+
+            --border: #e6eaf1;
+            --border-strong: #d8deea;
+
+            --green: #16865b;
+            --green-soft: #e9f8f1;
+
+            --orange: #c87512;
+            --orange-soft: #fff5e6;
+
+            --red: #c93d4f;
+            --red-soft: #fff0f2;
+
+            --shadow-sm: 0 4px 18px rgba(27, 39, 70, 0.06);
+            --shadow-md: 0 14px 40px rgba(27, 39, 70, 0.09);
+            --shadow-lg: 0 25px 70px rgba(27, 39, 70, 0.12);
+
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+
+            --container: 1240px;
+        }
+
+        /* =========================================================
+        TOP READING PROGRESS
+    ========================================================== */
+        .reading-progress {
+            position: fixed;
+            inset: 0 0 auto 0;
+            height: 4px;
+            z-index: 9999;
+            background: transparent;
+        }
+
+        .reading-progress span {
+            display: block;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #315efb, #6f8cff);
+            transition: width 0.1s linear;
+        }
+
+        /* =========================================================
+        HEADER
+    ========================================================== */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.94);
+            border-bottom: 1px solid rgba(230, 234, 241, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .header-inner {
+            max-width: var(--container);
+            margin: auto;
+            min-height: 74px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .brand-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            background: linear-gradient(135deg, #315efb, #6c87ff);
+            box-shadow: 0 8px 20px rgba(49, 94, 251, 0.25);
+        }
+
+        .brand-text {
+            font-size: 15px;
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-nav a {
+            padding: 9px 12px;
+            border-radius: 10px;
+            color: var(--text-soft);
+            font-size: 14px;
+            font-weight: 650;
+            transition: 0.2s ease;
+        }
+
+        .header-nav a:hover,
+        .header-nav a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            padding: 0 15px;
+            color: #fff;
+            background: var(--primary);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 750;
+            box-shadow: 0 7px 18px rgba(49, 94, 251, 0.2);
+            transition: 0.2s ease;
+        }
+
+        .header-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--border);
+            border-radius: 11px;
+            background: #fff;
+            color: var(--text);
+            font-size: 20px;
+        }
+
+        /* =========================================================
+        PAGE LAYOUT
+    ========================================================== */
+        .page-shell {
+            max-width: var(--container);
+            margin: auto;
+            padding: 30px 24px 80px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 7px;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            font-weight: 650;
+        }
+
+        .breadcrumb-separator {
+            color: #adb5c5;
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* =========================================================
+        SIDEBAR
+    ========================================================== */
+        .sidebar {
+            position: sticky;
+            top: 96px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 18px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-title {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .toc {
+            list-style: none;
+            display: grid;
+            gap: 3px;
+        }
+
+        .toc a {
+            display: block;
+            padding: 8px 10px;
+            color: var(--text-soft);
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 9px;
+            transition: 0.2s ease;
+        }
+
+        .toc a:hover,
+        .toc a.active {
+            color: var(--primary);
+            background: var(--primary-soft);
+        }
+
+        .sidebar-progress {
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+        }
+
+        .progress-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            font-size: 12px;
+            color: var(--text-soft);
+            margin-bottom: 8px;
+        }
+
+        .progress-value {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .progress-track {
+            height: 7px;
+            border-radius: 99px;
+            overflow: hidden;
+            background: #edf0f5;
+        }
+
+        .progress-track span {
+            display: block;
+            width: 0;
+            height: 100%;
+            background: var(--primary);
+            border-radius: inherit;
+            transition: width 0.3s ease;
+        }
+
+        /* =========================================================
+        MAIN ARTICLE
+    ========================================================== */
+        .article {
+            min-width: 0;
+        }
+
+        .chapter-hero {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(circle at 100% 0%, rgba(49, 94, 251, 0.13), transparent 35%), linear-gradient(135deg, #ffffff, #f7f9ff);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: clamp(28px, 5vw, 54px);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+        }
+
+        .chapter-hero::after {
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            right: -75px;
+            bottom: -95px;
+            border-radius: 50%;
+            background: rgba(49, 94, 251, 0.06);
+        }
+
+        .chapter-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            background: var(--primary-soft);
+            border: 1px solid #dce5ff;
+            padding: 7px 11px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .chapter-label::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .chapter-title {
+            max-width: 850px;
+            color: #111a2e;
+            font-size: clamp(2rem, 5vw, 4rem);
+            line-height: 1.1;
+            letter-spacing: -0.045em;
+            margin-bottom: 18px;
+        }
+
+        .chapter-intro {
+            max-width: 790px;
+            color: var(--text-soft);
+            font-size: clamp(15px, 2vw, 18px);
+            line-height: 1.8;
+        }
+
+        .chapter-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 26px;
+        }
+
+        .meta-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 11px;
+            color: var(--text-soft);
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* =========================================================
+        COMPLETE BUTTON
+    ========================================================== */
+        .complete-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 18px 20px;
+            background: var(--green-soft);
+            border: 1px solid #cfeee0;
+            border-radius: var(--radius-md);
+            margin-bottom: 24px;
+        }
+
+        .complete-text strong {
+            display: block;
+            color: #116a48;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .complete-text span {
+            display: block;
+            color: #4e7164;
+            font-size: 12px;
+        }
+
+        .complete-button {
+            flex: 0 0 auto;
+            border: 0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #fff;
+            background: var(--green);
+            font-size: 13px;
+            font-weight: 800;
+            transition: 0.2s ease;
+        }
+
+        .complete-button:hover {
+            transform: translateY(-1px);
+            filter: brightness(0.95);
+        }
+
+        .complete-button.completed {
+            background: #0d6b49;
+        }
+
+        /* =========================================================
+        CONTENT CARDS
+    ========================================================== */
+        .lesson-section {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: clamp(22px, 4vw, 36px);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            scroll-margin-top: 96px;
+        }
+
+        .section-kicker {
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 850;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 6px;
+        }
+
+        .lesson-section h2 {
+            color: #152039;
+            font-size: clamp(1.35rem, 3vw, 1.85rem);
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+            margin-bottom: 15px;
+        }
+
+        .lesson-section h3 {
+            color: #1c2942;
+            font-size: 1.08rem;
+            line-height: 1.4;
+            margin: 24px 0 9px;
+        }
+
+        .lesson-section p {
+            color: var(--text-soft);
+            margin-bottom: 13px;
+        }
+
+        .lesson-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .lesson-section ul,
+        .lesson-section ol {
+            padding-left: 21px;
+            color: var(--text-soft);
+        }
+
+        .lesson-section li {
+            margin-bottom: 7px;
+        }
+
+        .lesson-section li::marker {
+            color: var(--primary);
+        }
+
+        /* INFO GRID */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 13px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            padding: 17px;
+            background: var(--surface-soft);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+
+        .info-card strong {
+            display: block;
+            color: #1a2740;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .info-card span {
+            color: var(--text-soft);
+            font-size: 13px;
+        }
+
+        /* CONCEPT BOX */
+        .concept-box {
+            margin: 18px 0;
+            padding: 18px;
+            background: #f7f9ff;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 13px 13px 0;
+        }
+
+        .concept-box strong {
+            display: block;
+            color: #20346f;
+            margin-bottom: 4px;
+        }
+
+        .concept-box p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* TABLES */
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin: 18px 0;
+        }
+
+        table {
+            width: 100%;
+            min-width: 570px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 13px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        th {
+            color: #1d2c4c;
+            background: #f7f9fc;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        td {
+            color: var(--text-soft);
+            font-size: 13px;
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        /* STEPS */
+        .steps {
+            display: grid;
+            gap: 11px;
+            margin-top: 18px;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 34px 1fr;
+            gap: 12px;
+            padding: 14px;
+            background: #fbfcfe;
+            border: 1px solid var(--border);
+            border-radius: 13px;
+        }
+
+        .step-number {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            color: var(--primary);
+            background: var(--primary-soft);
+            font-size: 12px;
+            font-weight: 850;
+        }
+
+        .step strong {
+            display: block;
+            color: #1d2940;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .step p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* CALLOUTS */
+        .callout {
+            display: flex;
+            gap: 13px;
+            padding: 17px;
+            border-radius: 14px;
+            margin: 18px 0;
+        }
+
+        .callout-icon {
+            flex: 0 0 34px;
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .callout-content strong {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+
+        .callout-content p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .callout.tip {
+            background: var(--primary-soft);
+            border: 1px solid #dce5ff;
+        }
+
+        .callout.tip .callout-icon {
+            background: #dbe5ff;
+            color: var(--primary);
+        }
+
+        .callout.tip strong {
+            color: #2944a0;
+        }
+
+        .callout.warning {
+            background: var(--orange-soft);
+            border: 1px solid #f3dfbd;
+        }
+
+        .callout.warning .callout-icon {
+            background: #ffe8c1;
+            color: var(--orange);
+        }
+
+        .callout.warning strong {
+            color: #8c570e;
+        }
+
+        /* PRACTICE */
+        .practice-box {
+            background: linear-gradient(135deg, #17233d, #223458);
+            color: #fff;
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            margin-top: 20px;
+            box-shadow: 0 20px 50px rgba(23, 35, 61, 0.16);
+        }
+
+        .practice-box .section-kicker {
+            color: #9db4ff;
+        }
+
+        .practice-box h2 {
+            color: #fff;
+        }
+
+        .practice-box p,
+        .practice-box li {
+            color: #d5dded;
+        }
+
+        .practice-list {
+            margin-top: 12px;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            border: 0;
+            background: #fff;
+            padding: 16px;
+            color: #1b2740;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        .faq-icon {
+            flex: 0 0 auto;
+            width: 25px;
+            height: 25px;
+            display: grid;
+            place-items: center;
+            border-radius: 7px;
+            background: var(--primary-soft);
+            color: var(--primary);
+            transition: 0.2s ease;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 16px 16px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* =========================================================
+        CHAPTER NAVIGATION
+    ========================================================== */
+        .chapter-navigation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+            margin-top: 25px;
+        }
+
+        .chapter-nav-card {
+            display: block;
+            padding: 18px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: 0.2s ease;
+        }
+
+        .chapter-nav-card:hover {
+            border-color: #cdd8f8;
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-2px);
+        }
+
+        .chapter-nav-card.next {
+            text-align: right;
+        }
+
+        .nav-small {
+            display: block;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 5px;
+        }
+
+        .nav-title {
+            color: #1b2943;
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        /* =========================================================
+        FOOTER
+    ========================================================== */
+        .site-footer {
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+        }
+
+        .footer-inner {
+            max-width: var(--container);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .footer-links a {
+            color: var(--text-soft);
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* =========================================================
+        BACK TO TOP
+    ========================================================== */
+        .back-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.96);
+            color: var(--primary);
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: 0.2s ease;
+            z-index: 500;
+        }
+
+        .back-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* =========================================================
+        RESPONSIVE — TABLET & MOBILE
+    ========================================================== */
+        @media (max-width: 1020px) {
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                top: auto;
+            }
+
+            .toc {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .toc a {
+                border: 1px solid var(--border);
+            }
+
+            .sidebar-progress {
+                margin-top: 15px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .header-actions {
+                margin-left: auto;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .header-inner {
+                min-height: 66px;
+                padding: 0 15px;
+            }
+
+            .header-btn {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .page-shell {
+                padding: 20px 14px 55px;
+            }
+
+            .chapter-title {
+                font-size: clamp(2rem, 10vw, 2.8rem);
+            }
+
+            .complete-box {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .complete-button {
+                width: 100%;
+            }
+
+            .chapter-navigation {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-nav-card.next {
+                text-align: left;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- READING PROGRESS -->
+    <div class="reading-progress" aria-hidden="true">
+        <span id="readingProgress"></span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="brand" aria-label="AI Learning Academy Home">
+                <span class="brand-mark" aria-hidden="true">AI</span>
+                <span class="brand-text">AI Learning Academy</span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#curriculum">Course</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="projects.html">Projects</a>
+                <a href="progress.html">Progress</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="chapter-06.html" class="header-btn">
+                    Next Chapter →
+                </a>
+                <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Open navigation"
+                    aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="page-shell">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../index.html#curriculum">Course</a>
+            <span class="breadcrumb-separator">/</span>
+            <span aria-current="page">Chapter 4</span>
+        </nav>
+
+        <div class="content-layout">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-title">Chapter Contents</div>
+                <ul class="toc" id="toc">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#what-is-genai">Generative AI क्या है?</a></li>
+                    <li><a href="#how-genai-works">यह कैसे काम करता है?</a></li>
+                    <li><a href="#text-image-video">Text, Image & Video AI</a></li>
+                    <li><a href="#llm-foundation">LLM Foundation</a></li>
+                    <li><a href="#real-world-use">वास्तविक उपयोग</a></li>
+                    <li><a href="#practice">Practice Lab</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="sidebar-progress">
+                    <div class="progress-head">
+                        <span>Chapter Progress</span>
+                        <span class="progress-value" id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <span id="chapterProgress"></span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- ARTICLE -->
+            <article class="article">
+                <header class="chapter-hero">
+                    <span class="chapter-label">LEVEL 1 · CHAPTER 04</span>
+                    <h1 class="chapter-title">Generative AI क्या है?</h1>
+                    <p class="chapter-intro">
+                        Generative AI (जेनरेटिव एआई) आर्टिफिशियल इंटेलिजेंस की वह शाखा है जो केवल डेटा का विश्लेषण नहीं
+                        करती, बल्कि नया कंटेंट (जैसे टेक्स्ट, इमेजेज, ऑडियो, और वीडियो) खुद से सृजन (Generate) करती है।
+                    </p>
+                    <div class="chapter-meta">
+                        <span class="meta-chip">📚 Beginner Friendly</span>
+                        <span class="meta-chip">⏱️ Core AI Topic</span>
+                        <span class="meta-chip">🎨 Content Generation</span>
+                        <span class="meta-chip">🚀 LLMs & Media</span>
+                    </div>
+                </header>
+
+                <!-- COMPLETE BOX -->
+                <div class="complete-box">
+                    <div class="complete-text">
+                        <strong id="completeTitle">Chapter पूरा करने के लिए तैयार?</strong>
+                        <span id="completeDescription">Lesson पढ़ने के बाद इसे complete mark करें।</span>
+                    </div>
+                    <button class="complete-button" id="completeButton" type="button">
+                        ✓ Mark as Complete
+                    </button>
+                </div>
+
+                <!-- OVERVIEW -->
+                <section class="lesson-section" id="overview">
+                    <div class="section-kicker">Start Here</div>
+                    <h2>इस Chapter में क्या सीखेंगे?</h2>
+                    <p>Generative AI की बुनियादी समझ और यह कैसे हमारे डिजिटल अनुभव को बदल रहा है, इस पर विस्तार से चर्चा
+                        होगी।</p>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <strong>What is GenAI</strong>
+                            <span>जेनरेटिव एआई का अर्थ और पारंपरिक AI से अंतर।</span>
+                        </div>
+                        <div class="info-card">
+                            <strong>Media Generation</strong>
+                            <span>Text, Images और Video generating models।</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WHAT IS GENAI -->
+                <section class="lesson-section" id="what-is-genai">
+                    <div class="section-kicker">Concept 01</div>
+                    <h2>Generative AI क्या है?</h2>
+                    <p>
+                        पारंपरिक AI सिस्टम्स मुख्य रूप से डेटा को पहचानते हैं या वर्गीकरण (Classification) करते हैं।
+                        इसके विपरीत, <strong>Generative AI</strong> प्रॉम्ट (निर्देश) के आधार पर बिल्कुल नया ओरिजिनल
+                        कंटेंट तैयार करता है।
+                    </p>
+                    <div class="concept-box">
+                        <strong>मुख्य विशेषता</strong>
+                        <p>यह केवल डेटा नहीं दिखाता, बल्कि निर्देश मिलने पर नया टेक्स्ट, कोड, आर्ट या संगीत रच सकता है।
+                        </p>
+                    </div>
+                </section>
+
+                <!-- HOW GENAI WORKS -->
+                <section class="lesson-section" id="how-genai-works">
+                    <div class="section-kicker">Concept 02</div>
+                    <h2>Generative AI कैसे काम करता है?</h2>
+                    <p>यह डीप लर्निंग और न्यूरल नेटवर्क्स की मदद से विशाल डेटासेट में मौजूद पैटर्न्स को सीखता है और
+                        प्रायिकता (Probability) के आधार पर अगला शब्द या पिक्सेल प्रेडिक्ट करता है।</p>
+                </section>
+
+                <!-- TEXT IMAGE VIDEO -->
+                <section class="lesson-section" id="text-image-video">
+                    <div class="section-kicker">Concept 03</div>
+                    <h2>Text, Image और Video AI</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>कार्य</th>
+                                    <th>लोकप्रिय टूल्स</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Text AI</strong></td>
+                                    <td>लेखन, कोडिंग और बातचीत करना।</td>
+                                    <td>ChatGPT, Claude, Gemini</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Image AI</strong></td>
+                                    <td>वर्णन (Prompt) के आधार पर तस्वीरें बनाना।</td>
+                                    <td>Midjourney, DALL-E, Stable Diffusion</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Video/Audio AI</strong></td>
+                                    <td>वीडियो क्लिप्स और रियलिस्टिक आवाज़ बनाना।</td>
+                                    <td>Sora, Runway, ElevenLabs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- LLM FOUNDATION -->
+                <section class="lesson-section" id="llm-foundation">
+                    <div class="section-kicker">Concept 04</div>
+                    <h2>LLM (Large Language Models) की नींव</h2>
+                    <p>जेनरेटिव एआई का सबसे बड़ा आधार LLM हैं, जिन्हें हफ्तों तक इंटरनेट के खरबों शब्दों पर ट्रेन किया
+                        जाता है ताकि वे इंसानी भाषा को समझ सकें।</p>
+                </section>
+
+                <!-- REAL WORLD USE -->
+                <section class="lesson-section" id="real-world-use">
+                    <div class="section-kicker">Concept 05</div>
+                    <h2>वास्तविक जीवन में उपयोग</h2>
+                    <ul>
+                        <li>कंटेंट राइटिंग और मार्केटिंग कैंपेन में</li>
+                        <li>सॉफ्टवेयर कोडिंग और बग फिक्सिंग में</li>
+                        <li>ग्राफिक डिजाइन और वीडियो एडिटिंग में</li>
+                    </ul>
+                </section>
+
+                <!-- PRACTICE LAB -->
+                <section class="lesson-section" id="practice">
+                    <div class="practice-box">
+                        <div class="section-kicker">Practice Lab</div>
+                        <h2>Practical Assignment</h2>
+                        <p>किसी भी AI चैटबॉट (जैसे ChatGPT या Gemini) पर जाकर एक छोटी सी कहानी या कविता लिखने का निर्देश
+                            दें।</p>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section class="lesson-section" id="faq">
+                    <div class="section-kicker">FAQ</div>
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                क्या Generative AI असली चीज़ें खुद सोच सकता है?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>नहीं, यह अपनी समझ से नहीं बल्कि सीखे गए पैटर्न्स और प्रोबेबिलिटी के आधार पर आउटपुट
+                                    जनरेट करता है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CHAPTER NAVIGATION -->
+                <nav class="chapter-navigation" aria-label="Chapter navigation">
+                    <a href="chapter-04.html" class="chapter-nav-card">
+                        <span class="nav-small">← Back</span>
+                        <span class="nav-title">Chapter 4: Artificial Intelligence क्या है?</span>
+                    </a>
+
+                    <a href="chapter-06.html" class="chapter-nav-card next">
+                        <span class="nav-small">Next Chapter →</span>
+                        <span class="nav-title">Chapter 6: Prompt Engineering की बुनियादी बातें</span>
+                    </a>
+                </nav>
+
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">
+                © <span id="currentYear"></span> AI Learning Academy. Chapter 5.
+            </p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="../index.html">Home</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="projects.html">Projects</a>
+                <a href="progress.html">Progress</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop" type="button" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const STORAGE_KEY = "ai-learning-academy-progress";
+            const CURRENT_CHAPTER = 5;
+
+            const yearElement = document.getElementById("currentYear");
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+
+            const mobileMenu = document.getElementById("mobileMenu");
+            const headerNav = document.querySelector(".header-nav");
+
+            if (mobileMenu && headerNav) {
+                mobileMenu.addEventListener("click", () => {
+                    const isOpen = headerNav.classList.toggle("mobile-open");
+                    mobileMenu.setAttribute("aria-expanded", String(isOpen));
+
+                    if (isOpen) {
+                        headerNav.style.display = "flex";
+                        headerNav.style.position = "absolute";
+                        headerNav.style.top = "66px";
+                        headerNav.style.left = "14px";
+                        headerNav.style.right = "14px";
+                        headerNav.style.padding = "10px";
+                        headerNav.style.flexDirection = "column";
+                        headerNav.style.alignItems = "stretch";
+                        headerNav.style.background = "#fff";
+                        headerNav.style.border = "1px solid #e6eaf1";
+                        headerNav.style.borderRadius = "14px";
+                        headerNav.style.boxShadow = "0 18px 40px rgba(27,39,70,.12)";
+                    } else {
+                        headerNav.removeAttribute("style");
+                    }
+                });
+
+                document.addEventListener("click", (event) => {
+                    if (
+                        window.innerWidth <= 1020 &&
+                        headerNav.classList.contains("mobile-open") &&
+                        !headerNav.contains(event.target) &&
+                        !mobileMenu.contains(event.target)
+                    ) {
+                        headerNav.classList.remove("mobile-open");
+                        headerNav.removeAttribute("style");
+                        mobileMenu.setAttribute("aria-expanded", "false");
+                    }
+                });
+            }
+
+            const readingProgress = document.getElementById("readingProgress");
+            const chapterProgress = document.getElementById("chapterProgress");
+            const progressPercent = document.getElementById("progressPercent");
+
+            function updateReadingProgress() {
+                const scrollTop = window.scrollY;
+                const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const percentage = documentHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / documentHeight) * 100)) : 0;
+
+                if (readingProgress) readingProgress.style.width = percentage.toFixed(1) + "%";
+                if (chapterProgress) chapterProgress.style.width = percentage.toFixed(1) + "%";
+                if (progressPercent) progressPercent.textContent = Math.round(percentage) + "%";
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+
+            const backTop = document.getElementById("backTop");
+            if (backTop) {
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 500) {
+                        backTop.classList.add("visible");
+                    } else {
+                        backTop.classList.remove("visible");
+                    }
+                }, { passive: true });
+
+                backTop.addEventListener("click", () => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+
+            const faqButtons = document.querySelectorAll(".faq-question");
+            faqButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const item = button.closest(".faq-item");
+                    const isOpen = item.classList.contains("open");
+
+                    document.querySelectorAll(".faq-item.open").forEach((openItem) => {
+                        openItem.classList.remove("open");
+                        const openButton = openItem.querySelector(".faq-question");
+                        if (openButton) openButton.setAttribute("aria-expanded", "false");
+                    });
+
+                    if (!isOpen) {
+                        item.classList.add("open");
+                        button.setAttribute("aria-expanded", "true");
+                    }
+                });
+            });
+
+            function getProgress() {
+                try {
+                    const saved = localStorage.getItem(STORAGE_KEY);
+                    return saved ? JSON.parse(saved) : {};
+                } catch (error) {
+                    return {};
+                }
+            }
+
+            function saveProgress(progress) {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+                } catch (error) {
+                    console.warn("Progress could not be saved.", error);
+                }
+            }
+
+            function isChapterComplete() {
+                const progress = getProgress();
+                return Boolean(progress[CURRENT_CHAPTER]);
+            }
+
+            function updateCompleteUI() {
+                const button = document.getElementById("completeButton");
+                const title = document.getElementById("completeTitle");
+                const description = document.getElementById("completeDescription");
+
+                if (!button) return;
+
+                if (isChapterComplete()) {
+                    button.textContent = "✓ Completed";
+                    button.classList.add("completed");
+                    if (title) title.textContent = "Chapter 5 complete! 🎉";
+                    if (description) description.textContent = "आपकी progress इस device पर save है।";
+                } else {
+                    button.textContent = "✓ Mark as Complete";
+                    button.classList.remove("completed");
+                    if (title) title.textContent = "Chapter पूरा करने के लिए तैयार?";
+                    if (description) description.textContent = "Lesson पढ़ने के बाद इसे complete mark करें।";
+                }
+            }
+
+            const completeButton = document.getElementById("completeButton");
+            if (completeButton) {
+                completeButton.addEventListener("click", () => {
+                    const progress = getProgress();
+                    if (progress[CURRENT_CHAPTER]) {
+                        delete progress[CURRENT_CHAPTER];
+                    } else {
+                        progress[CURRENT_CHAPTER] = true;
+                    }
+                    saveProgress(progress);
+                    updateCompleteUI();
+                });
+            }
+
+            updateCompleteUI();
+
+            const tocLinks = document.querySelectorAll("#toc a");
+            const sections = Array.from(tocLinks).map((link) => {
+                const id = link.getAttribute("href");
+                return id ? document.querySelector(id) : null;
+            }).filter(Boolean);
+
+            function updateActiveTOC() {
+                let currentSection = null;
+                sections.forEach((section) => {
+                    const top = section.getBoundingClientRect().top;
+                    if (top <= 140) {
+                        currentSection = section;
+                    }
+                });
+
+                tocLinks.forEach((link) => link.classList.remove("active"));
+                if (currentSection) {
+                    const activeLink = document.querySelector('#toc a[href="#' + currentSection.id + '"]');
+                    if (activeLink) activeLink.classList.add("active");
+                }
+            }
+
+            window.addEventListener("scroll", updateActiveTOC, { passive: true });
+            updateActiveTOC();
+
+            tocLinks.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    const targetId = link.getAttribute("href");
+                    if (!targetId || !targetId.startsWith("#")) return;
+                    const target = document.querySelector(targetId);
+                    if (!target) return;
+
+                    event.preventDefault();
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                    history.replaceState(null, "", targetId);
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
